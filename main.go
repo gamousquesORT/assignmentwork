@@ -1,3 +1,6 @@
+// this example is based on the followin link https://go.dev/doc/tutorial/web-service-gin and copilot suggests
+// https://www.freecodecamp.org/news/how-to-build-a-web-app-with-go-gin-and-react-cffdc473576/ or
+// https://dev.to/matijakrajnik/web-app-development-guide-using-golang-gin-and-react-1g2c  or
 package main
 
 import (
@@ -38,7 +41,8 @@ func postAlbums(c *gin.Context) {
 
 	// Call BindJSON to bind the received JSON to
 	// newAlbum.
-	if err := c.BindJSON(&newAlbum); err != nil {
+	err := c.BindJSON(&newAlbum)
+	if err != nil {
 		return
 	}
 

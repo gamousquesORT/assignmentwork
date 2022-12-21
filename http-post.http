@@ -1,0 +1,10 @@
+# curl http://localhost:8080/albums
+#    --include
+#    --header "Content-Type: application/json"
+#    --request "POST"
+#    --data '{"id": "5","title": "Grandes Tangos","artist": "Gardel","price": 79.99}'
+POST http://localhost:8080/albums
+Content-Type: application/json
+
+{"id": "5","title": "Grandes Tangos","artist": "Gardel","price": 79.99}
+

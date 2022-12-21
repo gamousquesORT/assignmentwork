@@ -1,0 +1,4 @@
+# get one album by id
+GET http://localhost:8080/albums/4
+Accept: application/json
+

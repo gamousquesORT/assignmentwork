@@ -1,0 +1,6 @@
+#
+# Get all albumns
+
+GET http://localhost:8080/albums
+
+Accept: application/json
